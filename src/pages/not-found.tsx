@@ -1,23 +1,22 @@
-import { Card, CardContent } from '@/components/ui/card';
 import { AlertCircle } from 'lucide-react';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
-      <Card className="w-full max-w-md mx-4">
-        <CardContent className="pt-6">
-          <div className="flex mb-4 gap-2">
-            <AlertCircle className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl font-bold text-gray-900">
-              404 Page Not Found
-            </h1>
-          </div>
-
-          <p className="mt-4 text-sm text-gray-600">
-            Did you forget to add the page to the router?
-          </p>
-        </CardContent>
-      </Card>
+    <div className="flex min-h-screen w-full items-center justify-center bg-[#f5f0e9] px-6">
+      <div className="w-full max-w-md text-center text-[#704a2e]">
+        <AlertCircle className="mx-auto mb-5 h-9 w-9" strokeWidth={1.5} />
+        <h1 className="font-display text-4xl">Página não encontrada</h1>
+        <p className="mt-4 text-sm leading-6 text-[#704a2e]/65">
+          O endereço acessado não existe. Volte para a página inicial do Centro
+          Estético Premium.
+        </p>
+        <a
+          href="/"
+          className="mt-7 inline-flex bg-[#704a2e] px-6 py-3 text-[11px] font-bold uppercase tracking-[.16em] text-[#f9f4ec] transition hover:bg-[#563721]"
+        >
+          Voltar ao início
+        </a>
+      </div>
     </div>
   );
 }
