@@ -122,7 +122,7 @@ function Hero() {
 }
 
 function Intro() {
-  return <section className="bg-[#704a2e] text-[#f5f0e9]">
+  return <section className="overflow-hidden bg-[#704a2e] text-[#f5f0e9]">
     <div className="marquee-track flex w-max items-center gap-9 py-4 text-[10px] font-bold uppercase tracking-[.25em] text-[#bba271]"><span>Natural é uma escolha</span><span aria-hidden="true">·</span><span>Seu rosto, seu ritmo</span><span aria-hidden="true">·</span><span>Cuidado que sabe até onde ir</span><span aria-hidden="true">·</span><span>Natural é uma escolha</span><span aria-hidden="true">·</span><span>Seu rosto, seu ritmo</span><span aria-hidden="true">·</span><span>Cuidado que sabe até onde ir</span><span aria-hidden="true">·</span></div>
     <div className="mx-auto grid max-w-[1320px] gap-12 px-6 py-24 md:px-10 lg:grid-cols-[.7fr_1.3fr] lg:gap-24 lg:py-32">
       <Reveal><p className="text-[10px] font-bold uppercase tracking-[.22em] text-[#bba271]">Uma pergunta honesta</p></Reveal>

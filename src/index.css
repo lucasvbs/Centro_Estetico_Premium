@@ -113,7 +113,7 @@
 .faq-content { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 350ms ease; }
 .faq-content.open { grid-template-rows: 1fr; }
 .faq-content > div { overflow: hidden; }
-.marquee-track { animation: drift 28s linear infinite; }
+.marquee-track { animation: drift 28s linear infinite; max-width: none; will-change: transform; }
 @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
